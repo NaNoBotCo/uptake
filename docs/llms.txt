@@ -57,3 +57,27 @@ Attribution string: NaNoBotCo, Uptake (2026), https://nanobotco.github.io/uptake
 - [Paul Otlet and his staff at the Mundaneum](https://nanobotco.github.io/uptake/img/mundaneum.jpg): Paul Otlet and his team, Mundaneum. Public domain [52]. Twelve million index cards on a universal classification, built to be queried by a machine that did not exist yet. The corpus outlived the institution; the building is a museum and the cards are still legible.
 - [A straw beehive carved on a gravestone at Stobo Kirk](https://nanobotco.github.io/uptake/img/skep-stone.jpg): A straw skep cut into a gravestone, Stobo Kirk. Public domain [53]. The hive as a figure for what outlasts the keeper.
 - [The fourteen-day clone series, revealed one day at a time](https://nanobotco.github.io/uptake/img/figure-4-arrivals.gif): Figure 2 again, as motion. The same numbers, the same source file, a different reading: the baseline has to go by before the spike means anything.
+
+# — roster of sibling sites, generated from data/fleet.json —
+## Elsewhere from the same publisher
+
+- [Mot Dang](https://motdang.net/): city directory for Chiang Mai and Chiang Rai
+- [wichaa](https://wichaa.net/): Lanna manuscripts, the amulet market, and the traditions around them
+- [Amulet Atlas](https://nanobotco.github.io/amulet-atlas/): amulets, charms and talismans worldwide
+- [Carolina Barbecue](https://nanobotco.github.io/carolina-barbecue/): barbecue in North and South Carolina
+- [Wing Country](https://nanobotco.github.io/buffalo-wings/): the American chicken wing
+- [Pink Box](https://nanobotco.github.io/pink-box/): the American mom-and-pop donut shop
+- [Basque Tables](https://nanobotco.github.io/basque-tables/): Basque dining rooms of California, Nevada and Idaho
+- [Pinot Country](https://nanobotco.github.io/pinot-noir/): pinot noir: the vine, the regions, the cellars
+- [Care Abroad](https://nanobotco.github.io/care-abroad/): treatment across borders, with published prices and their dates
+- [Thai Roots](https://nanobotco.github.io/thairoots/): a root dictionary of Thai, with a word decomposer
+- [The index](https://nanobotco.github.io/index/): every corpus, site and repository, counted
+- [NaNoBotCo](https://nanobotco.github.io/): the portal
+- [Ask Mot Dang](https://ask.motdang.net/): reader assistant over the directory
+- [ai.motdang.net](https://ai.motdang.net/): white-label assistants, by seat
+- [Defiant](https://defiant.to/): medical and dental care in Chiang Mai, with a translator at the appointment
+- [Hongdam](https://hongdam.net/): bilingual web development, Chiang Rai
+- [ฮักฝรั่ง](https://hakfarang.net/): เรื่องเงิน วีซ่า และชีวิตกับแฟนฝรั่ง
+- [Offrampt](https://offrampt.net/): turning crypto into spendable local money, Thailand first
+
+- [The roster as JSON](https://nanobotco.github.io/index/fleet.json)

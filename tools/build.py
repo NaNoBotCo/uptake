@@ -13,6 +13,7 @@ from __future__ import annotations
 
 import html
 import json
+import sys
 import pathlib
 import re
 import shutil
@@ -21,6 +22,9 @@ from datetime import datetime, timezone
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 DOCS = ROOT / "docs"
+
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
+import fleet  # noqa: E402
 DATA = ROOT / "data"
 SITE = "https://nanobotco.github.io/uptake"
 BUILT = datetime.now(timezone.utc).strftime("%Y-%m-%d")
@@ -565,6 +569,8 @@ def main():
           f"#   {SITE}/LICENSE.txt           CC BY-SA 4.0 (text, data) · MIT (tools)",
           f"#   {SITE}/for-agents/           the terms, in prose", ""]
     (DOCS / "robots.txt").write_text("\n".join(r))
+
+    fleet.decorate(DOCS, "uptake", roster=fleet.load(ROOT / "data" / "fleet.json"))
 
     # ---- sitemap
     urls = ["", "for-agents/", "manual.txt", "manual.md", "corpus.jsonl", "llms.txt",
