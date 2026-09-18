@@ -9,13 +9,6 @@ published 2026-09-18 · rebuilt 2026-09-18 · https://nanobotco.github.io/uptake
 text and data CC BY-SA 4.0 · tools MIT · 54 sources
 
 ==========================================================================
-UPTAKE
-
-
-
-PUBLISHING FOR MACHINES THAT COPY
---------------------------------------------------------------------------
-
 Fifty-two repositories. Fourteen days. 961 clones from 501 distinct machines,
 against 36 page views from 20 distinct browsers. Twenty-three of those
 repositories were copied by five or more machines and opened by nobody. This
@@ -39,19 +32,14 @@ one GitHub account [1]. Fifty-two repositories, most of them small, none of
 them promoted, none of them linked from anywhere with an audience. The
 fourteen-day window held this:
 
-  clone operations                    961
-
-  distinct machines that cloned       501
-
-  GitHub page views                   36
-
-  distinct browsers that viewed       20
-
-  repositories with any cloner        47 of 52
-
+  clone operations                                         961
+  -------------------------------------------------------  --------
+  distinct machines that cloned                            501
+  GitHub page views                                        36
+  distinct browsers that viewed                            20
+  repositories with any cloner                             47 of 52
   repositories with five or more cloners and zero viewers  23
-
-  cloners per viewer                  25.1
+  cloners per viewer                                       25.1
 
   [FIGURE: Unique cloners against unique page viewers, sixteen repositories]
   Sixteen repositories by unique cloner. The honey bar is machines that copied
@@ -219,11 +207,13 @@ stumble on. It is a row in a stream, and the stream is free.
 
 This is the mechanical difference underneath the whole discipline:
 
-                                   discovery latency                who initiates                    what arrives
-
-  a new web page                   days to weeks                    crawler, on its own schedule     one rendered document
-
-  a new public repository          minutes to hours                 subscriber, on an event          the entire tree and its history
+                    discovery         who initiates      what arrives
+                    latency
+  ----------------  ----------------  -----------------  -----------------
+  a new web page    days to weeks     crawler, on its    one rendered
+                                      own schedule       document
+  a new public      minutes to hours  subscriber, on an  the entire tree
+  repository                          event              and its history
 
 Search optimisation was a long game because the first step was long. Somebody
 had to find you, decide you were worth revisiting, build up enough signal to
@@ -528,27 +518,18 @@ reason to run it — it disciplines the publisher before it informs the reader.
 Take the inventory of what you own, and ask of each item whether it survives a
 clone.
 
-                                      survives a clone
-
-  your domain                         no
-
-  your analytics                      no
-
-  your navigation, header, footer     no
-
-  your consent banner                 no
-
-  your rate limit                     no
-
-  your paywall                        no
-
-  your `LICENSE` file                 **yes**
-
-  your `CITATION.cff`                 **yes**
-
-  a provenance field inside the record  **yes**
-
-  a source URL inside the JSON        **yes**
+                                        survives a clone
+  ------------------------------------  ----------------
+  your domain                           no
+  your analytics                        no
+  your navigation, header, footer       no
+  your consent banner                   no
+  your rate limit                       no
+  your paywall                          no
+  your LICENSE file                     yes
+  your CITATION.cff                     yes
+  a provenance field inside the record  yes
+  a source URL inside the JSON          yes
 
 Everything in the top half is infrastructure, sitting between the reader and
 the artifact. Everything in the bottom half is inside the artifact, so git
@@ -679,33 +660,37 @@ Everything above, as a build order. Hours are working estimates for a site
 that already has its content in structured files; multiply by three if the
 content lives in a CMS.
 
-                                      hours                               what it buys                        evidence
-
-  `LICENSE` with an SPDX identifier   1                                   the one term that survives a copy   [36][39]
-
-  `CITATION.cff`                      1                                   a rendered cite control, a Zenodo deposit, a reference-manager import  [2][7][8]
-
-  `robots.txt` naming the crawlers, with Content Signals  1                                   an open door that reads as deliberate  [9][12]
-
-  `sitemap.xml`, and the `Sitemap:` line  1                                   the crawler half, still worth having  [17]
-
-  a flat corpus: `.jsonl`, `.csv`, `llms-full.txt`  3                                   one request instead of forty, no parser  [49]
-
-  a JSON Schema beside the data       3                                   field meanings that are read, not inferred  —
-
-  a `Dataset` block in JSON-LD        2                                   a corpus that reads as a corpus     [18][19][22]
-
-  `llms.txt`                          2                                   cheap courtesy, unproven return     [10][11]
-
-  a page addressed to machines, in prose  2                                   the terms stated where a reader will meet them  —
-
-  a sources registry, one record per source  8                                   the layer paraphrase cannot carry away  —
-
-  per-field provenance tiers          40+                                 the reason a careful reader keeps your version  [35]
-
-  a coverage file listing your own gaps  4                                   trust from a reader who can check   —
-
-  a Croissant description             4                                   loadable by a training pipeline, not merely findable  [20][21]
+                            hours  what it buys               evidence
+  ------------------------  -----  -------------------------  ------------
+  LICENSE with an SPDX      1      the one term that          [36][39]
+  identifier                       survives a copy
+  CITATION.cff              1      a rendered cite control,   [2][7][8]
+                                   a Zenodo deposit, a
+                                   reference-manager import
+  robots.txt naming the     1      an open door that reads    [9][12]
+  crawlers, with Content           as deliberate
+  Signals
+  sitemap.xml, and the      1      the crawler half, still    [17]
+  Sitemap: line                    worth having
+  a flat corpus: .jsonl,    3      one request instead of     [49]
+  .csv, llms-full.txt              forty, no parser
+  a JSON Schema beside the  3      field meanings that are    —
+  data                             read, not inferred
+  a Dataset block in JSON-  2      a corpus that reads as a   [18][19][22]
+  LD                               corpus
+  llms.txt                  2      cheap courtesy, unproven   [10][11]
+                                   return
+  a page addressed to       2      the terms stated where a   —
+  machines, in prose               reader will meet them
+  a sources registry, one   8      the layer paraphrase       —
+  record per source                cannot carry away
+  per-field provenance      40+    the reason a careful       [35]
+  tiers                            reader keeps your version
+  a coverage file listing   4      trust from a reader who    —
+  your own gaps                    can check
+  a Croissant description   4      loadable by a training     [20][21]
+                                   pipeline, not merely
+                                   findable
 
 The first four rows are an afternoon and they are the ones almost nobody does.
 

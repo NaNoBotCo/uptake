@@ -68,8 +68,7 @@ def render(md):
             continue
         if ln.startswith("# "):
             out.append(f"<h1>{inline(ln[2:])}</h1>")
-            plain.append(ln[2:].upper())
-            i += 1
+            i += 1                                   # the text file's own header carries the title
         elif ln.startswith("## "):
             head = ln[3:]
             m = re.match(r"^(\d+)\.\s+(.*)$", head)
@@ -80,9 +79,11 @@ def render(md):
                 plain.append(f"\n\n{sect}. {m.group(2).upper()}\n" + "-" * 74)
             else:
                 slug = re.sub(r"[^a-z0-9]+", "-", head.lower()).strip("-")
-                cls = " class=\"standfirst\"" if not out or out[-1].startswith("<h1") else ""
+                standfirst = bool(out) and out[-1].startswith("<h1")
+                cls = " class=\"standfirst\"" if standfirst else ""
                 out.append(f'<h2 id="{slug}"{cls}>{inline(head)}</h2>')
-                plain.append(f"\n\n{head.upper()}\n" + "-" * 74)
+                if not standfirst:
+                    plain.append(f"\n\n{head.upper()}\n" + "-" * 74)
             i += 1
         elif ln.strip() == "---":
             out.append('<hr>')
@@ -123,9 +124,7 @@ def render(md):
                 h.append("<tr>" + "".join(f"<td>{inline(c)}</td>" for c in r) + "</tr>")
             h.append("</tbody></table></div>")
             out.append("".join(h))
-            w = max((len(c) for r in rows for c in r), default=10)
-            for r in ([head] if head and any(head) else []) + body:
-                plain.append("  " + "  ".join(CITE.sub(r"[\1]", c).ljust(min(w, 34)) for c in r).rstrip())
+            plain.append(plain_table(head if head and any(head) else None, body))
         elif ln.startswith("*") and ln.rstrip().endswith("*") and len(ln.strip()) > 2 and not ln.startswith("**"):
             out.append(f"<p class=\"aside\">{inline(ln.strip().strip('*'))}</p>")
             plain.append(textwrap.fill(ln.strip().strip("*"), 78))
@@ -142,6 +141,29 @@ def render(md):
             out.append(f"<p>{inline(para)}</p>")
             plain.append(textwrap.fill(CITE.sub(r"[\1]", para), 78))
     return out, plain, figs
+
+
+def plain_table(head, body, width=74):
+    """Lay a table out in fixed columns, wrapped, for the plain-text file."""
+    clean = lambda c: CITE.sub(r"[\1]", c).replace("`", "").replace("**", "")
+    rows = ([head] if head else []) + body
+    cols = max(len(r) for r in rows)
+    rows = [r + [""] * (cols - len(r)) for r in rows]
+    rows = [[clean(c) for c in r] for r in rows]
+    want = [max(len(c) for c in col) for col in zip(*rows)]
+    gap = 2
+    room = width - 2 - gap * (cols - 1)
+    while sum(want) > room:                       # shave the widest column until it fits
+        want[want.index(max(want))] -= 1
+    out = []
+    for n, r in enumerate(rows):
+        cells = [textwrap.wrap(c, w) or [""] for c, w in zip(r, want)]
+        for line in range(max(len(c) for c in cells)):
+            out.append("  " + (" " * gap).join(
+                (c[line] if line < len(c) else "").ljust(w) for c, w in zip(cells, want)).rstrip())
+        if head and n == 0:
+            out.append("  " + (" " * gap).join("-" * w for w in want))
+    return "\n".join(out)
 
 
 def alt_srcs(src):
