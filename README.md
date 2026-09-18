@@ -107,7 +107,7 @@ Commons page, its creator where one is recorded, and its licence statement.
 ## Licence
 
 Text, figures and data: **CC BY-SA 4.0** — attribution and share-alike. Tools: MIT.
-Pictures: public domain, not relicensed here. Full terms in [LICENSE](LICENSE).
+Pictures: public domain, not relicensed here. Full terms in [LICENSE](LICENSE) and [NOTICE.txt](NOTICE.txt).
 
 Cite it as:
 
