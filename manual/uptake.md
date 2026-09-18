@@ -634,6 +634,8 @@ keep the human click at the end of the chain and the thing being measured here h
 in it at all. Uptake is a word for being taken up and carried — which is what the logs show,
 and what the licence is for.
 
+*Contact.* Nan · nan@motdang.net · https://ko-fi.com/defiantchiangmai · https://www.patreon.com/nanobotco
+
 ---
 
 ## Sources

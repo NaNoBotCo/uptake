@@ -136,3 +136,8 @@ raster passes.
 
 The finding is one account over one fortnight. Contradicting data is worth more here than
 agreement — issues and pull requests are open.
+
+
+---
+
+Contact: Nan · nan@motdang.net · Sponsor: [Ko-fi](https://ko-fi.com/defiantchiangmai) · [Patreon](https://www.patreon.com/nanobotco)
