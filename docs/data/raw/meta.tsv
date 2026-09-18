@@ -1,0 +1,52 @@
+amulet-atlas	PUBLIC	2026-09-16	2026-09-18	20425	0	0	Python	0	NONE		Amulets, charms and talismans worldwide — one JSON record per node, every field carrying where it came from. Equal Earth maps, a deep timeline, the signs drawn.
+acr-hud	PRIVATE	2026-07-22	2026-09-18	10	0	0	Python	0	NONE		
+NaNoBotCo	PUBLIC	2026-07-28	2026-09-18	7	0	0	-	1	NONE		Profile README and project directory
+Lanna	PUBLIC	2026-07-11	2026-09-18	1513426	0	0	-	4	NONE		The crawler — harvests Lanna manuscript archives into a structured catalog
+nanobotco.github.io	PUBLIC	2026-07-25	2026-09-18	901	0	0	HTML	3	NONE		NaN — คุณแนน. Personal portal. It gets done today.
+basque-tables	PUBLIC	2026-09-16	2026-09-18	57678	0	0	Python	0	NONE	https://nanobotco.github.io/basque-tables/	A sourced directory of Basque dining rooms in California, Nevada and Idaho — seating, prices, published days and the Picon Punch, every field naming where it came from.
+pink-box	PUBLIC	2026-09-16	2026-09-18	31004	0	0	Python	0	NONE		Pink Box — a directory of the American mom-and-pop donut shop: cake or raised, egg rolls in the case, and who's been up since two
+buffalo-wings	PUBLIC	2026-09-16	2026-09-18	56102	0	0	Python	0	NONE		Wing Country — a directory of the chicken wing in the United States: 13 regional styles, 22 sauce labels read off the panel, places, people, words, and every field saying where it came from.
+amulet-essentials	PUBLIC	2026-09-18	2026-09-18	299987	0	0	Python	0	NONE		A pan-Southeast-Asian amulet catalogue: 87 kinds in their own languages, 637 free pictures with verified licences, on-device photo identification, and a price analysis of 15,300 listings. Live at wichaa.net/amulets
+care-abroad	PUBLIC	2026-09-16	2026-09-16	28851	0	0	Python	6	NONE	https://nanobotco.github.io/care-abroad/	A directory of treatment across borders: countries, city clusters, procedures, hospitals, published prices with their dates, the law where the law is the reason, and the risks. One JSON record per node, every field carrying its provenance.
+pinot-noir	PUBLIC	2026-09-16	2026-09-16	42374	0	0	Python	0	NONE		A directory of pinot noir: the vine, the ground, the cellars, the words — and a deep dive on Santa Maria tri-tip. One JSON record per node, with per-field provenance.
+carolina-barbecue	PUBLIC	2026-09-16	2026-09-16	124453	0	0	Python	6	NONE	https://nanobotco.github.io/carolina-barbecue/	A directory of barbecue in North and South Carolina: styles, sauces, dishes, pit practice, places, people, events and words — one JSON record each, every field sourced, every page saying what its neighbours are to it.
+coucal-clock	PRIVATE	2026-07-22	2026-09-16	2988	0	0	Python	0	NONE		
+dead-mans-switch	PUBLIC	2026-07-22	2026-09-16	14	0	0	Python	4	NONE		Local, offline check-in switch — fires a payload once if you ever stop checking in
+traffic-eye	PUBLIC	2026-07-30	2026-09-16	22	0	0	JavaScript	0	NONE		Who is asking for your pages — people, AI crawlers, search engines, scrapers — across all your sites, in one place
+jovilabe	PUBLIC	2026-07-28	2026-09-16	343	0	0	HTML	3	NONE		A modeled antique geared instrument for Jupiter's four Galilean moons
+manuscript-crawler	PRIVATE	2026-07-22	2026-09-16	294359	0	0	HTML	0	NONE		
+spec-hud	PRIVATE	2026-07-22	2026-09-16	219	0	0	TypeScript	0	NONE		
+mot-dang	PUBLIC	2026-07-27	2026-09-16	1031993	0	0	Python	4	NONE		มดแดง Mot Dang — Chiang Mai · Chiang Rai city directory, the 1997 way. รู้ทุกซอย เหมือนมดแดง
+manuscript-wiki	PUBLIC	2026-07-22	2026-09-16	35696	0	0	Python	5	NONE		Read-only wiki over the Lanna manuscript catalog — facets, OCR, image store
+defiant-site	PUBLIC	2026-07-23	2026-09-16	19693	0	0	Python	4	NONE		defiant.to — US expat services & medical tourism concierge, Chiang Mai. American healthcare is bullshit; this is the exit map.
+skipdjt	PUBLIC	2026-07-22	2026-08-03	2003	0	0	Python	3	NONE		Skip DJT — fare comparison for people who'd rather not fly from Palm Beach (PBI/DJT). Fort Lauderdale and Miami were cheaper on 11 of 11 routes checked.
+mueang-map	PUBLIC	2026-07-22	2026-08-03	2435	0	0	HTML	4	NONE		Niche-lens participatory map of Chiang Mai
+moat-game	PUBLIC	2026-07-22	2026-08-03	485	0	0	Python	4	NONE		A text game about an amulet smuggler crossing Chiang Mai checkpoints in 2076
+thairoots	PUBLIC	2026-08-02	2026-08-02	3492	0	0	HTML	0	NONE		
+stocktake	PUBLIC	2026-07-30	2026-07-30	4	0	0	Python	0	NONE		Re-derives what actually exists across all your projects, domains, and Cloudflare Workers — instead of remembering it
+hak-farang	PUBLIC	2026-07-28	2026-07-28	274	0	0	Astro	4	NONE		Thai-first guide for Thai partners of farang — money, visas, family
+offramp	PUBLIC	2026-07-28	2026-07-28	535	0	0	Python	4	NONE		The manual for getting paid in crypto and spending it locally without a local bank account
+blinking-twelve	PUBLIC	2026-07-28	2026-07-28	78	0	0	HTML	4	NONE		blinky1200 — a skeuomorphic puzzle: set the blinking 12:00, eleven levels, 1987 to 2026
+blinky-fidget	PUBLIC	2026-07-28	2026-07-28	17	0	0	HTML	3	NONE		A VCR to fiddle with — no goal, just the click of buttons and static
+moat-stardew	PUBLIC	2026-07-28	2026-07-28	17	0	0	C#	4	NONE		Charms of Chiang Mai — a Stardew Valley SMAPI mod set in the Moat world
+neurovizr-decoded	PUBLIC	2026-07-28	2026-07-28	36	0	0	Python	4	NONE		Stdlib FFT teardown of a light and sound neurostimulation device
+lanna-almanac	PUBLIC	2026-07-28	2026-07-28	25	0	0	HTML	4	NONE		One-file Northern-reckoning Lanna almanac widget
+taoist-oracle	PUBLIC	2026-07-28	2026-07-28	105	0	0	HTML	4	NONE		Stdlib Chinese and Taoist divination engine — I Ching, Plum Blossom, Wen Wang Gua, Bazi
+pdf-tool	PUBLIC	2026-07-22	2026-07-28	4	0	0	Python	4	NONE		A numbered-menu PDF toolbox — tables to Excel, split, sign, merge, extract
+kali-yantra	PUBLIC	2026-07-22	2026-07-28	20	0	0	Python	3	NONE		Generative yantra geometry, rendered by script
+baanstaff	PUBLIC	2026-07-22	2026-07-28	2401	0	0	TypeScript	3	NONE		Household-staff marketplace and white-label kit for Chiang Mai (homematch's predecessor)
+poplucky	PUBLIC	2026-07-27	2026-07-27	4633	0	0	Python	3	NONE		Poplucky — a collector's catalogue for Pop Mart blind boxes. Faceted, trilingual (EN/TH/ZH), and open about what it doesn't know.
+thai-answers	PUBLIC	2026-07-22	2026-07-22	17	0	0	Python	4	NONE		Evergreen answers to real Facebook-group questions, over a venue catalog
+swanbot	PUBLIC	2026-07-22	2026-07-22	2	0	0	Python	3	NONE		A black-swan-aware trading and agent utility
+st-expedite-wiki	PUBLIC	2026-07-22	2026-07-22	53089	0	0	Python	3	NONE		Bilingual Saint-Expédit devotional-tradition wiki with a verified inventory
+muak-yant-site	PUBLIC	2026-07-22	2026-07-22	9	0	0	HTML	3	NONE		Site for sacred yantra work on motorcycle helmets
+manuscript-transcribe	PUBLIC	2026-07-22	2026-07-22	7006	0	0	Python	4	NONE		Transcription pipeline for Lanna manuscript page images
+homematch	PUBLIC	2026-07-22	2026-07-22	63	0	0	JavaScript	4	NONE		Negotiation-first household-services matchmaking for Chiang Mai
+food-pantry	PUBLIC	2026-07-22	2026-07-22	1	0	0	-	3	NONE		OCR pipeline for food-pantry intake forms
+flighthelper	PUBLIC	2026-07-22	2026-07-22	164	0	0	Python	3	NONE		Comfort-scored flight search with price-drop alerts
+feed-detox	PUBLIC	2026-07-22	2026-07-22	7	0	0	Python	3	NONE		A done-with-you social-feed cleanup — personalized playbook, customer keeps their own login
+cm-womens-health	PUBLIC	2026-07-22	2026-07-22	25	0	0	JavaScript	4	NONE		Finder for women's health facilities across Chiang Mai
+catalog-pipeline	PRIVATE	2026-07-22	2026-07-22	1741	0	0	JavaScript	0	NONE		
+amulet-reference	PUBLIC	2026-07-22	2026-07-22	29	0	0	HTML	4	NONE		Bilingual Thai and Lanna amulet reference and treatise
+amulet-market-api	PUBLIC	2026-07-22	2026-07-22	62850	0	0	Python	4	NONE		JSON API over thousands of real Lazada amulet-commerce listings
+wichaa-vault	PUBLIC	2026-07-22	2026-07-22	814	0	0	Python	3	NONE		Obsidian authoring vault behind the wichaa knowledge base

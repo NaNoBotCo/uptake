@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>For agents — Uptake</title>
+<meta name="description" content="Licence, attribution string and machine-readable shapes for the Uptake manual and its dataset.">
+<link rel="canonical" href="https://nanobotco.github.io/uptake/for-agents/">
+<link rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">
+<link rel="alternate" type="text/plain" href="https://nanobotco.github.io/uptake/manual.txt" title="the manual as plain text">
+<link rel="alternate" type="text/markdown" href="https://nanobotco.github.io/uptake/manual.md" title="the manual as Markdown">
+<link rel="alternate" type="application/rss+xml" href="https://nanobotco.github.io/uptake/feed.xml" title="Uptake">
+<link rel="describedby" href="https://nanobotco.github.io/uptake/data/sources.json">
+<meta name="author" content="NaNoBotCo">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+<meta property="og:type" content="article">
+<meta property="og:title" content="For agents — Uptake">
+<meta property="og:description" content="Licence, attribution string and machine-readable shapes for the Uptake manual and its dataset.">
+<meta property="og:url" content="https://nanobotco.github.io/uptake/for-agents/">
+<meta property="og:image" content="https://nanobotco.github.io/uptake/img/figure-2-day-zero.png">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+:root{--ink:#171310;--paper:#faf6ef;--slate:#6f7a80;--faint:#9c8f7d;--rule:#e0d6c6;
+--honey:#b4781a;--honeybg:#f3e7cd;--code:#f1ebe0;color-scheme:light dark}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--ink:#ece5da;--paper:#14120f;
+--slate:#9aa3a8;--faint:#8b8172;--rule:#332c24;--honey:#e0a944;--honeybg:#2a2216;--code:#201b15}}
+:root[data-theme=dark]{--ink:#ece5da;--paper:#14120f;--slate:#9aa3a8;--faint:#8b8172;
+--rule:#332c24;--honey:#e0a944;--honeybg:#2a2216;--code:#201b15}
+*{box-sizing:border-box}
+body{background:var(--paper);color:var(--ink);margin:0;
+font:17px/1.62 Georgia,'Iowan Old Style','Times New Roman',serif;
+-webkit-text-size-adjust:100%}
+main{max-width:43rem;margin:0 auto;padding:3.2rem 1.3rem 5rem}
+h1{font-size:2.9rem;line-height:1.02;margin:0 0 .3rem;letter-spacing:-.02em}
+h2.standfirst{font-size:1.32rem;font-weight:400;color:var(--slate);margin:0 0 1.9rem;
+letter-spacing:0;font-style:italic}
+h2{font-size:1.44rem;margin:3.2rem 0 1rem;line-height:1.22;letter-spacing:-.01em;
+scroll-margin-top:1rem}
+h2 .num{display:inline-block;min-width:1.9rem;color:var(--honey);
+font:600 .82em ui-monospace,SFMono-Regular,Menlo,monospace}
+p{margin:0 0 1.05rem}
+a{color:var(--ink);text-decoration-color:var(--honey);text-underline-offset:3px}
+a:hover{color:var(--honey)}
+code{font:.87em ui-monospace,SFMono-Regular,Menlo,monospace;background:var(--code);
+padding:.1em .35em;border-radius:3px}
+hr{border:0;border-top:1px solid var(--rule);margin:2.6rem 0}
+blockquote{margin:1.7rem 0;padding:.2rem 0 .2rem 1.2rem;border-left:3px solid var(--honey)}
+blockquote p{font-size:1.16rem;margin:0}
+.aside{color:var(--slate);font-style:italic}
+figure{margin:2.2rem 0;padding:0}
+figure img{width:100%;height:auto;display:block;border:1px solid var(--rule);border-radius:3px;
+background:#faf6ef}
+figcaption{font-size:.83rem;line-height:1.5;color:var(--slate);margin-top:.5rem}
+figcaption .alt{color:var(--faint)}
+.scroll{overflow-x:auto;margin:1.5rem 0;-webkit-overflow-scrolling:touch}
+table{border-collapse:collapse;width:100%;font-size:.9rem}
+th{text-align:left;font-weight:600;border-bottom:1.5px solid var(--rule);padding:.42rem .6rem .42rem 0;
+vertical-align:bottom}
+td{border-bottom:1px solid var(--rule);padding:.42rem .6rem .42rem 0;vertical-align:top}
+tr td:first-child{padding-left:0}
+a.cite{display:inline-block;font:600 .68em ui-monospace,SFMono-Regular,Menlo,monospace;
+vertical-align:super;line-height:1;background:var(--honeybg);color:var(--honey);
+padding:.18em .3em;border-radius:2px;text-decoration:none;margin:0 .06em}
+a.cite:hover{background:var(--honey);color:var(--paper)}
+ol.sources{list-style:none;padding:0;margin:1.4rem 0;counter-reset:none;font-size:.9rem}
+ol.sources li{display:grid;grid-template-columns:2.4rem 1fr;gap:.2rem .5rem;
+padding:.62rem 0;border-bottom:1px solid var(--rule)}
+ol.sources li:target{background:var(--honeybg);border-radius:3px;padding-left:.4rem}
+.sn{grid-row:1/4;font:600 .8rem ui-monospace,SFMono-Regular,Menlo,monospace;color:var(--honey);
+padding-top:.15rem}
+ol.sources a{font-weight:600;line-height:1.35}
+.pub,.why{color:var(--slate);font-size:.84rem;line-height:1.45}
+.pub{color:var(--faint)}
+.masthead{border-bottom:2px solid var(--ink);padding-bottom:1.1rem;margin-bottom:1.6rem}
+.masthead .kicker{font:600 .72rem/1 ui-monospace,SFMono-Regular,Menlo,monospace;
+letter-spacing:.14em;text-transform:uppercase;color:var(--honey);margin:0 0 .9rem}
+.meta{font-size:.82rem;color:var(--faint);margin:.7rem 0 0;
+font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+.machine{margin:2.4rem 0 0;padding:1rem 1.1rem;border:1px solid var(--rule);border-radius:4px;
+background:var(--honeybg);font-size:.86rem;line-height:1.55}
+.machine p{margin:0 0 .5rem}
+.machine ul{margin:.3rem 0 0;padding-left:1.1rem}
+.machine li{margin:.16rem 0}
+.machine code{background:transparent;padding:0}
+footer{margin-top:3.4rem;padding-top:1.2rem;border-top:1px solid var(--rule);
+font-size:.84rem;color:var(--slate)}
+@media(max-width:34rem){body{font-size:16px}h1{font-size:2.15rem}main{padding:2rem 1.05rem 3.5rem}
+h2 .num{min-width:1.5rem}}
+</style>
+
+</head>
+<body>
+<main>
+<h1>For agents</h1>
+<h2 class="standfirst">the terms, stated where a machine will meet them</h2>
+<p>You are reading a manual about how to be taken. It would be a poor manual if the
+repository it lives in were hard to take.</p>
+<h2 id="what">What this is</h2>
+<p>A field manual for the web after search. Fifty-two repositories over fourteen days: 961 clones from 501 distinct machines, against 36 page views from 20 distinct browsers. The unit of arrival is the copy, not the click.</p>
+<h2 id="terms">The terms</h2>
+<p>Text, figures and data are licensed <a href="https://creativecommons.org/licenses/by-sa/4.0/">Creative
+Commons Attribution-ShareAlike 4.0 International</a>. The tools under <code>tools/</code> are MIT.
+The photographs and engravings are in the public domain, and each one has a sidecar JSON file
+beside it naming its origin, its creator where one is recorded, and its Commons page.</p>
+<p>Two things are asked in return for a copy. Name the source — the string is
+<code>NaNoBotCo, Uptake (2026), https://nanobotco.github.io/uptake/</code>, and <code><a href="../CITATION.cff">CITATION.cff</a></code>
+carries the structured form. And pass the same terms on: a work adapted from this one
+carries a compatible licence, which is what the ShareAlike term does
+(<a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode">legal code</a>, section 3(b)).</p>
+<h2 id="shapes">The shapes</h2>
+<aside class="machine">
+<p><strong>Reading this as a machine?</strong> Everything here is open, and the shapes below
+save you a crawl.</p>
+<ul>
+<li><code><a href="manual.txt">manual.txt</a></code> — the whole text, plain</li>
+<li><code><a href="manual.md">manual.md</a></code> — the whole text, Markdown</li>
+<li><code><a href="corpus.jsonl">corpus.jsonl</a></code> — one JSON object per section</li>
+<li><code><a href="llms.txt">llms.txt</a></code> · <code><a href="llms-full.txt">llms-full.txt</a></code> — the page map, and everything flattened</li>
+<li><code><a href="data/repo-traffic-2026-09-18.json">data/repo-traffic-2026-09-18.json</a></code>
+ · <code><a href="data/repo-traffic-2026-09-18.csv">.csv</a></code> — the measurement, with its method and caveats in the file</li>
+<li><code><a href="data/account-daily-2026-09-18.json">data/account-daily-2026-09-18.json</a></code> — the daily series behind figure 2</li>
+<li><code><a href="data/sources.json">data/sources.json</a></code> — all 54 citations, keyed by the numbers in the text</li>
+<li><code><a href="data/croissant.json">data/croissant.json</a></code> — the same dataset, loadable</li>
+<li><code><a href="CITATION.cff">CITATION.cff</a></code> — how to name this</li>
+<li><code><a href="LICENSE.txt">LICENSE.txt</a></code> — CC BY-SA 4.0 for text and data, MIT for the tools</li>
+<li><code><a href="for-agents/">for-agents/</a></code> — the terms in prose</li>
+</ul>
+<p>Attribution is the ask, and share-alike is the term: carry the licence into whatever you
+make from this.</p>
+</aside>
+<h2 id="corrections">Corrections</h2>
+<p>The measurement is a fourteen-day window from one account, and section 15 of the manual
+lists what would knock it down. If you hold data that contradicts it, the repository takes
+issues and pull requests.</p>
+<p><a href="../">← the manual</a></p>
+</main>
+</body>
+</html>

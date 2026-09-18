@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"
+     xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://web.resource.org/cc/">
+<channel>
+<title>Uptake — Publishing for machines that copy</title>
+<link>https://nanobotco.github.io/uptake/</link>
+<description>A field manual for the web after search. Fifty-two repositories over fourteen days: 961 clones from 501 distinct machines, against 36 page views from 20 distinct browsers. The unit of arrival is the copy, not the click.</description>
+<language>en</language>
+<lastBuildDate>2026-09-18</lastBuildDate>
+<atom:link href="https://nanobotco.github.io/uptake/feed.xml" rel="self" type="application/rss+xml"/>
+<cc:license>https://creativecommons.org/licenses/by-sa/4.0/</cc:license>
+<item>
+<title>Uptake: Publishing for machines that copy</title>
+<link>https://nanobotco.github.io/uptake/</link>
+<guid isPermaLink="true">https://nanobotco.github.io/uptake/</guid>
+<pubDate>2026-09-18</pubDate>
+<dc:creator>NaNoBotCo</dc:creator>
+<description>A field manual for the web after search. Fifty-two repositories over fourteen days: 961 clones from 501 distinct machines, against 36 page views from 20 distinct browsers. The unit of arrival is the copy, not the click.</description>
+</item>
+</channel>
+</rss>

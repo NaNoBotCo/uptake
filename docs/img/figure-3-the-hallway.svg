@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 530" width="1000" height="530" role="img" aria-labelledby="t d">
+<title id="t">The seven files an arriving agent can pick up</title><desc id="d">Seven doors along a corridor: robots.txt, llms.txt, flat corpus files, a record schema, a sources registry, a citation file and a licence. Each names what it gives an agent and what its absence costs.</desc>
+<rect width="1000" height="530" fill="#faf6ef"/>
+<text x="44" y="50" font-family="Georgia, 'Iowan Old Style', serif" font-size="27" fill="#171310" text-anchor="start" font-weight="bold" letter-spacing="0">The hallway</text>
+<text x="44" y="76" font-family="Georgia, 'Iowan Old Style', serif" font-size="14" fill="#7d878c" text-anchor="start" font-weight="normal" letter-spacing="0">what an arriving agent can pick up, and what it costs you to leave out</text>
+<line x1="44" y1="98" x2="956" y2="98" stroke="#d8cfc0"/>
+<rect x="44" y="130" width="128" height="196" fill="none" stroke="#d8cfc0" stroke-width="1.4" rx="3"/>
+<rect x="44" y="130" width="128" height="30" fill="#c8891f" rx="3"/>
+<rect x="44" y="154" width="128" height="6" fill="#c8891f"/>
+<text x="108.0" y="150" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11.5" fill="#faf6ef" text-anchor="middle" font-weight="bold" letter-spacing="0">robots.txt</text>
+<text x="54" y="184" font-family="Georgia, 'Iowan Old Style', serif" font-size="11.5" fill="#171310" text-anchor="start" font-weight="normal" letter-spacing="0">named crawlers,</text>
+<text x="54" y="199" font-family="Georgia, 'Iowan Old Style', serif" font-size="11.5" fill="#171310" text-anchor="start" font-weight="normal" letter-spacing="0">allowed by name</text>
+<line x1="54" y1="256" x2="162" y2="256" stroke="#d8cfc0" stroke-dasharray="2 3"/>
+<text x="54" y="274" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="10" fill="#b5a892" text-anchor="start" font-weight="normal" letter-spacing="0">without it:</text>
+<text x="54" y="290" font-family="Georgia, 'Iowan Old Style', serif" font-size="11" fill="#7d878c" text-anchor="start" font-weight="normal" letter-spacing="0">a crawler that</text>
+<text x="54" y="304" font-family="Georgia, 'Iowan Old Style', serif" font-size="11" fill="#7d878c" text-anchor="start" font-weight="normal" letter-spacing="0">guesses</text>
+<rect x="180" y="130" width="128" height="196" fill="none" stroke="#d8cfc0" stroke-width="1.4" rx="3"/>
+<rect x="180" y="130" width="128" height="30" fill="#c8891f" rx="3"/>
+<rect x="180" y="154" width="128" height="6" fill="#c8891f"/>
+<text x="244.0" y="150" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11.5" fill="#faf6ef" text-anchor="middle" font-weight="bold" letter-spacing="0">llms.txt</text>
+<text x="190" y="184" font-family="Georgia, 'Iowan Old Style', serif" font-size="11.5" fill="#171310" text-anchor="start" font-weight="normal" letter-spacing="0">every page, one</text>
+<text x="190" y="199" font-family="Georgia, 'Iowan Old Style', serif" font-size="11.5" fill="#171310" text-anchor="start" font-weight="normal" letter-spacing="0">line each</text>
+<line x1="190" y1="256" x2="298" y2="256" stroke="#d8cfc0" stroke-dasharray="2 3"/>
+<text x="190" y="274" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="10" fill="#b5a892" text-anchor="start" font-weight="normal" letter-spacing="0">without it:</text>
+<text x="190" y="290" font-family="Georgia, 'Iowan Old Style', serif" font-size="11" fill="#7d878c" text-anchor="start" font-weight="normal" letter-spacing="0">a full crawl to</text>
+<text x="190" y="304" font-family="Georgia, 'Iowan Old Style', serif" font-size="11" fill="#7d878c" text-anchor="start" font-weight="normal" letter-spacing="0">find the map</text>
+<rect x="316" y="130" width="128" height="196" fill="none" stroke="#d8cfc0" stroke-width="1.4" rx="3"/>
+<rect x="316" y="130" width="128" height="30" fill="#c8891f" rx="3"/>
+<rect x="316" y="154" width="128" height="6" fill="#c8891f"/>
+<text x="380.0" y="150" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11.5" fill="#faf6ef" text-anchor="middle" font-weight="bold" letter-spacing="0">corpus.jsonl</text>
+<text x="326" y="184" font-family="Georgia, 'Iowan Old Style', serif" font-size="11.5" fill="#171310" text-anchor="start" font-weight="normal" letter-spacing="0">the corpus,</text>
+<text x="326" y="199" font-family="Georgia, 'Iowan Old Style', serif" font-size="11.5" fill="#171310" text-anchor="start" font-weight="normal" letter-spacing="0">already flat</text>
+<line x1="326" y1="256" x2="434" y2="256" stroke="#d8cfc0" stroke-dasharray="2 3"/>
+<text x="326" y="274" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="10" fill="#b5a892" text-anchor="start" font-weight="normal" letter-spacing="0">without it:</text>
+<text x="326" y="290" font-family="Georgia, 'Iowan Old Style', serif" font-size="11" fill="#7d878c" text-anchor="start" font-weight="normal" letter-spacing="0">HTML parsed back</text>
+<text x="326" y="304" font-family="Georgia, 'Iowan Old Style', serif" font-size="11" fill="#7d878c" text-anchor="start" font-weight="normal" letter-spacing="0">into rows</text>
+<rect x="452" y="130" width="128" height="196" fill="none" stroke="#d8cfc0" stroke-width="1.4" rx="3"/>
+<rect x="452" y="130" width="128" height="30" fill="#c8891f" rx="3"/>
+<rect x="452" y="154" width="128" height="6" fill="#c8891f"/>
+<text x="516.0" y="150" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11.5" fill="#faf6ef" text-anchor="middle" font-weight="bold" letter-spacing="0">schema.json</text>
+<text x="462" y="184" font-family="Georgia, 'Iowan Old Style', serif" font-size="11.5" fill="#171310" text-anchor="start" font-weight="normal" letter-spacing="0">what the fields</text>
+<text x="462" y="199" font-family="Georgia, 'Iowan Old Style', serif" font-size="11.5" fill="#171310" text-anchor="start" font-weight="normal" letter-spacing="0">mean</text>
+<line x1="462" y1="256" x2="570" y2="256" stroke="#d8cfc0" stroke-dasharray="2 3"/>
+<text x="462" y="274" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="10" fill="#b5a892" text-anchor="start" font-weight="normal" letter-spacing="0">without it:</text>
+<text x="462" y="290" font-family="Georgia, 'Iowan Old Style', serif" font-size="11" fill="#7d878c" text-anchor="start" font-weight="normal" letter-spacing="0">field names</text>
+<text x="462" y="304" font-family="Georgia, 'Iowan Old Style', serif" font-size="11" fill="#7d878c" text-anchor="start" font-weight="normal" letter-spacing="0">guessed from</text>
+<text x="462" y="318" font-family="Georgia, 'Iowan Old Style', serif" font-size="11" fill="#7d878c" text-anchor="start" font-weight="normal" letter-spacing="0">values</text>
+<rect x="588" y="130" width="128" height="196" fill="none" stroke="#d8cfc0" stroke-width="1.4" rx="3"/>
+<rect x="588" y="130" width="128" height="30" fill="#c8891f" rx="3"/>
+<rect x="588" y="154" width="128" height="6" fill="#c8891f"/>
+<text x="652.0" y="150" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11.5" fill="#faf6ef" text-anchor="middle" font-weight="bold" letter-spacing="0">sources.json</text>
+<text x="598" y="184" font-family="Georgia, 'Iowan Old Style', serif" font-size="11.5" fill="#171310" text-anchor="start" font-weight="normal" letter-spacing="0">where each fact</text>
+<text x="598" y="199" font-family="Georgia, 'Iowan Old Style', serif" font-size="11.5" fill="#171310" text-anchor="start" font-weight="normal" letter-spacing="0">came from</text>
+<line x1="598" y1="256" x2="706" y2="256" stroke="#d8cfc0" stroke-dasharray="2 3"/>
+<text x="598" y="274" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="10" fill="#b5a892" text-anchor="start" font-weight="normal" letter-spacing="0">without it:</text>
+<text x="598" y="290" font-family="Georgia, 'Iowan Old Style', serif" font-size="11" fill="#7d878c" text-anchor="start" font-weight="normal" letter-spacing="0">a claim with no</text>
+<text x="598" y="304" font-family="Georgia, 'Iowan Old Style', serif" font-size="11" fill="#7d878c" text-anchor="start" font-weight="normal" letter-spacing="0">provenance</text>
+<rect x="724" y="130" width="128" height="196" fill="none" stroke="#d8cfc0" stroke-width="1.4" rx="3"/>
+<rect x="724" y="130" width="128" height="30" fill="#c8891f" rx="3"/>
+<rect x="724" y="154" width="128" height="6" fill="#c8891f"/>
+<text x="788.0" y="150" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11.5" fill="#faf6ef" text-anchor="middle" font-weight="bold" letter-spacing="0">CITATION.cff</text>
+<text x="734" y="184" font-family="Georgia, 'Iowan Old Style', serif" font-size="11.5" fill="#171310" text-anchor="start" font-weight="normal" letter-spacing="0">how to name you</text>
+<line x1="734" y1="256" x2="842" y2="256" stroke="#d8cfc0" stroke-dasharray="2 3"/>
+<text x="734" y="274" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="10" fill="#b5a892" text-anchor="start" font-weight="normal" letter-spacing="0">without it:</text>
+<text x="734" y="290" font-family="Georgia, 'Iowan Old Style', serif" font-size="11" fill="#7d878c" text-anchor="start" font-weight="normal" letter-spacing="0">an uncredited</text>
+<text x="734" y="304" font-family="Georgia, 'Iowan Old Style', serif" font-size="11" fill="#7d878c" text-anchor="start" font-weight="normal" letter-spacing="0">paraphrase</text>
+<rect x="860" y="130" width="128" height="196" fill="none" stroke="#d8cfc0" stroke-width="1.4" rx="3"/>
+<rect x="860" y="130" width="128" height="30" fill="#c8891f" rx="3"/>
+<rect x="860" y="154" width="128" height="6" fill="#c8891f"/>
+<text x="924.0" y="150" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11.5" fill="#faf6ef" text-anchor="middle" font-weight="bold" letter-spacing="0">LICENSE</text>
+<text x="870" y="184" font-family="Georgia, 'Iowan Old Style', serif" font-size="11.5" fill="#171310" text-anchor="start" font-weight="normal" letter-spacing="0">what carrying it</text>
+<text x="870" y="199" font-family="Georgia, 'Iowan Old Style', serif" font-size="11.5" fill="#171310" text-anchor="start" font-weight="normal" letter-spacing="0">obliges</text>
+<line x1="870" y1="256" x2="978" y2="256" stroke="#d8cfc0" stroke-dasharray="2 3"/>
+<text x="870" y="274" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="10" fill="#b5a892" text-anchor="start" font-weight="normal" letter-spacing="0">without it:</text>
+<text x="870" y="290" font-family="Georgia, 'Iowan Old Style', serif" font-size="11" fill="#7d878c" text-anchor="start" font-weight="normal" letter-spacing="0">silence, read as</text>
+<text x="870" y="304" font-family="Georgia, 'Iowan Old Style', serif" font-size="11" fill="#7d878c" text-anchor="start" font-weight="normal" letter-spacing="0">permission</text>
+<line x1="44" y1="362" x2="910" y2="362" stroke="#171310" stroke-width="1.6"/>
+<path d="M 910 355 L 938 362 L 910 369 Z" fill="#171310"/>
+<text x="44" y="388" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" fill="#171310" text-anchor="start" font-weight="normal" letter-spacing="0">an agent arrives</text>
+<text x="910" y="388" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" fill="#171310" text-anchor="end" font-weight="normal" letter-spacing="0">and leaves carrying the whole thing</text>
+<text x="44" y="424" font-family="Georgia, 'Iowan Old Style', serif" font-size="13.5" fill="#171310" text-anchor="start" font-weight="normal" letter-spacing="0">Each door is a file at a guessable path. None of them needs an account, a key, a rate limit or a render pass;</text>
+<text x="44" y="444" font-family="Georgia, 'Iowan Old Style', serif" font-size="13.5" fill="#171310" text-anchor="start" font-weight="normal" letter-spacing="0">each one removes a guess the next reader would otherwise have to make. The corridor is the product.</text>
+<text x="44" y="470" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#b5a892" text-anchor="start" font-weight="normal" letter-spacing="0">uptake · nanobotco.github.io/uptake</text>
+</svg>

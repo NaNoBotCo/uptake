@@ -1,0 +1,135 @@
+# Uptake — https://nanobotco.github.io/uptake/
+# Read it, index it, quote it, train on it, clone it.
+# The ask is the licence: name the source, and pass the same terms on.
+
+User-agent: *
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: claude-web
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: GoogleOther
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+User-agent: meta-externalagent
+Allow: /
+
+User-agent: FacebookBot
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+User-agent: cohere-training-data-crawler
+Allow: /
+
+User-agent: Diffbot
+Allow: /
+
+User-agent: omgili
+Allow: /
+
+User-agent: Timpibot
+Allow: /
+
+User-agent: YouBot
+Allow: /
+
+User-agent: PanguBot
+Allow: /
+
+User-agent: Webzio-Extended
+Allow: /
+
+User-agent: AI2Bot
+Allow: /
+
+User-agent: ImagesiftBot
+Allow: /
+
+User-agent: DuckAssistBot
+Allow: /
+
+User-agent: MistralAI-User
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: YandexBot
+Allow: /
+
+User-agent: MojeekBot
+Allow: /
+
+User-agent: archive.org_bot
+Allow: /
+
+User-agent: ia_archiver
+Allow: /
+
+# Content signals (https://contentsignals.org)
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
+
+Sitemap: https://nanobotco.github.io/uptake/sitemap.xml
+
+# Written for machines:
+#   https://nanobotco.github.io/uptake/llms.txt              every page, one line each
+#   https://nanobotco.github.io/uptake/llms-full.txt         the manual and the measurement, flattened
+#   https://nanobotco.github.io/uptake/corpus.jsonl          one JSON object per section
+#   https://nanobotco.github.io/uptake/data/sources.json     every citation, keyed to the text
+#   https://nanobotco.github.io/uptake/data/croissant.json   the dataset, loadable
+#   https://nanobotco.github.io/uptake/CITATION.cff          how to name this
+#   https://nanobotco.github.io/uptake/LICENSE.txt           CC BY-SA 4.0 (text, data) · MIT (tools)
+#   https://nanobotco.github.io/uptake/for-agents/           the terms, in prose

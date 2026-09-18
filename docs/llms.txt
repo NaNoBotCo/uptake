@@ -1,0 +1,59 @@
+# Uptake — Publishing for machines that copy
+
+> A field manual for the web after search. Fifty-two repositories over fourteen days: 961 clones from 501 distinct machines, against 36 page views from 20 distinct browsers. The unit of arrival is the copy, not the click.
+
+Text and data are CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/).
+Attribution string: NaNoBotCo, Uptake (2026), https://nanobotco.github.io/uptake/
+
+## The manual
+
+- [1. The number](https://nanobotco.github.io/uptake/#the-number): On 18 September 2026 I pulled the traffic endpoints for every repository on one GitHub account . Fifty-two repositories, most of them small, none of them promoted, none of them linked from anywhere with an…
+- [2. What a clone is, and what a click was](https://nanobotco.github.io/uptake/#what-a-clone-is-and-what-a-click-was): A click delivers one rendered page to one person. What arrives is HTML after the stylesheet, after the script, after the consent banner. The licence is not in it. The schema is not in it. The sources behind…
+- [3. The measurement, and what it cannot say](https://nanobotco.github.io/uptake/#the-measurement-and-what-it-cannot-say): The numbers above are weaker than they look, and the argument is better for saying so. **The window is fourteen days and there is no history.** GitHub's traffic endpoints hold a rolling fortnight and discard…
+- [4. Day zero](https://nanobotco.github.io/uptake/#day-zero): On 16 September 2026 seven directories went public from that account in a single evening. Here is what the account's clone traffic did. 617 clone operations in twenty-four hours, from 267 distinct machines.…
+- [5. Three bots wearing one coat](https://nanobotco.github.io/uptake/#three-bots-wearing-one-coat): Most robots.txt files in the world address a single imaginary robot. There are at least four real ones and they want different things. **The trainer** takes your text to fit weights. ClaudeBot , GPTBot…
+- [6. The objective function moved](https://nanobotco.github.io/uptake/#the-objective-function-moved): Search engine optimisation maximised a product of two probabilities: that you rank, and that ranking earns a click. Every practice descends from that objective — the keyword, the title tag, the backlink, the…
+- [7. The artifact, not the page](https://nanobotco.github.io/uptake/#the-artifact-not-the-page): The practical turn is to stop shipping pages that reference data and start shipping data that renders pages. An artifact is complete on arrival. Somebody who takes it has the records, the vocabulary that…
+- [8. The hallway](https://nanobotco.github.io/uptake/#the-hallway): Once you accept that the reader arrives, takes everything and leaves without speaking, the design question becomes narrow and answerable: what can they pick up on the way through? **`robots.txt`** — the named…
+- [9. Provenance is the product](https://nanobotco.github.io/uptake/#provenance-is-the-product): Here is the part a marketer will care about most, because it is the part that cannot be replicated by anyone generating filler. The corpora described here carry provenance at the field level. Not a…
+- [10. The licence is the only thing that travels](https://nanobotco.github.io/uptake/#the-licence-is-the-only-thing-that-travels): Take the inventory of what you own, and ask of each item whether it survives a clone. Everything in the top half is infrastructure, sitting between the reader and the artifact. Everything in the bottom half is…
+- [11. What to count now](https://nanobotco.github.io/uptake/#what-to-count-now): The dashboard has to change, because the current one measures a surface this audience does not touch. What to put on it: **Unique cloners per repository per window, floor-adjusted.** Establish the floor from…
+- [12. What does not work](https://nanobotco.github.io/uptake/#what-does-not-work): Ranked by how often it is recommended. **A custom domain, bought for this audience.** A cloner never sees it. It matters in a citation string a person eventually reads, and for portability if you ever move —…
+- [13. The tactics, in order of cost](https://nanobotco.github.io/uptake/#the-tactics-in-order-of-cost): Everything above, as a build order. Hours are working estimates for a site that already has its content in structured files; multiply by three if the content lives in a CMS. The first four rows are an…
+- [14. Posterity](https://nanobotco.github.io/uptake/#posterity): There is an argument here that is not about marketing at all. Five hundred and one machines hold copies of one small publisher's work. Software Heritage systematically archives public repositories with their…
+- [15. What would falsify this](https://nanobotco.github.io/uptake/#what-would-falsify-this): The manual is built on a fourteen-day window from one account. Here is what would knock it down, written out so that a reader can check rather than take my word. **One operator, many addresses.** If the 501…
+
+## The whole text
+
+- [Plain text](https://nanobotco.github.io/uptake/manual.txt): the manual, unformatted
+- [Markdown](https://nanobotco.github.io/uptake/manual.md): the manual, as written
+- [JSON Lines](https://nanobotco.github.io/uptake/corpus.jsonl): one object per section, with its citation ids
+- [Everything flattened](https://nanobotco.github.io/uptake/llms-full.txt): text, data and sources in one file
+
+## The measurement
+
+- [Repository traffic, JSON](https://nanobotco.github.io/uptake/data/repo-traffic-2026-09-18.json): 52 repositories, 14 days, with method and caveats in the file
+- [Repository traffic, CSV](https://nanobotco.github.io/uptake/data/repo-traffic-2026-09-18.csv): the same rows, flat
+- [Daily series, JSON](https://nanobotco.github.io/uptake/data/account-daily-2026-09-18.json): the account by day
+- [Daily series, CSV](https://nanobotco.github.io/uptake/data/account-daily-2026-09-18.csv): the same, flat
+- [Croissant description](https://nanobotco.github.io/uptake/data/croissant.json): loadable by an ML pipeline
+- [Raw API output](https://nanobotco.github.io/uptake/data/raw/): what the endpoints returned, untouched
+
+## Provenance
+
+- [Sources](https://nanobotco.github.io/uptake/data/sources.json): all 54 citations, keyed to the text
+- [How to cite this](https://nanobotco.github.io/uptake/CITATION.cff)
+- [Licence](https://nanobotco.github.io/uptake/LICENSE.txt)
+- [Terms, in prose](https://nanobotco.github.io/uptake/for-agents/)
+
+## Figures
+
+- [Unique cloners against unique page viewers, sixteen repositories](https://nanobotco.github.io/uptake/img/figure-1-who-came-for-it.svg): Sixteen repositories by unique cloner. The honey bar is machines that copied the whole repository; the grey hairline under it is browsers that opened its GitHub page. On most rows there is no grey.
+- [A fifteenth-century copyist at his desk](https://nanobotco.github.io/uptake/img/scribe.jpg): Jean Miélot at work, Brussels, Royal Library MS 9278 fol. 10r, second half of the fifteenth century. Public domain [50]. Copying was the distribution technology for most of the history of writing; the interval in which it was not is the interval we mistook for normal.
+- [Clones per day across the account over fourteen days, with a forty-fold spike on 16 September](https://nanobotco.github.io/uptake/img/figure-2-day-zero.svg): Daily clone operations across all fifty-two repositories. The twelve days before 16 September total 293 between them. 16 September alone: 617 clone operations from 267 distinct machines.
+- [The card division of the Library of Congress, rows of wooden cabinets](https://nanobotco.github.io/uptake/img/card-catalog.jpg): The Card Division, Library of Congress. Public domain [51]. An index built at enormous cost for readers who would arrive in person, and the last one built on that assumption.
+- [A straw skep, engraved](https://nanobotco.github.io/uptake/img/skep-line.png): A straw skep, Encyclopaedia Britannica, 1911. Public domain [54].
+- [Seven files an arriving agent can pick up, and what each absence costs](https://nanobotco.github.io/uptake/img/figure-3-the-hallway.svg): Seven doors along a corridor. Each is a file at a guessable path; each removes one guess the next reader would otherwise have to make.
+- [Paul Otlet and his staff at the Mundaneum](https://nanobotco.github.io/uptake/img/mundaneum.jpg): Paul Otlet and his team, Mundaneum. Public domain [52]. Twelve million index cards on a universal classification, built to be queried by a machine that did not exist yet. The corpus outlived the institution; the building is a museum and the cards are still legible.
+- [A straw beehive carved on a gravestone at Stobo Kirk](https://nanobotco.github.io/uptake/img/skep-stone.jpg): A straw skep cut into a gravestone, Stobo Kirk. Public domain [53]. The hive as a figure for what outlasts the keeper.
+- [The fourteen-day clone series, revealed one day at a time](https://nanobotco.github.io/uptake/img/figure-4-arrivals.gif): Figure 2 again, as motion. The same numbers, the same source file, a different reading: the baseline has to go by before the spike means anything.

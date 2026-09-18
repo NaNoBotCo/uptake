@@ -1,0 +1,53 @@
+repo,clones,unique_cloners,views,unique_viewers,clones_per_cloner,visibility,created,last_push,disk_kb,stars,forks,language,topics,licence,homepage,description
+carolina-barbecue,132,71,4,3,1.86,public,2026-09-16,2026-09-16,124453,0,0,Python,6,NONE,https://nanobotco.github.io/carolina-barbecue/,"A directory of barbecue in North and South Carolina: styles, sauces, dishes, pit practice, places, people, events and words — one JSON record each, every field sourced, every page saying what its neighbours are to it."
+buffalo-wings,50,35,0,0,1.43,public,2026-09-16,2026-09-18,56102,0,0,Python,0,NONE,,"Wing Country — a directory of the chicken wing in the United States: 13 regional styles, 22 sauce labels read off the panel, places, people, words, and every field saying where it came from."
+nanobotco.github.io,82,34,2,1,2.41,public,2026-07-25,2026-09-18,901,0,0,HTML,3,NONE,,NaN — คุณแนน. Personal portal. It gets done today.
+Lanna,250,32,3,3,7.81,public,2026-07-11,2026-09-18,1513426,0,0,-,4,NONE,,The crawler — harvests Lanna manuscript archives into a structured catalog
+mot-dang,54,28,9,4,1.93,public,2026-07-27,2026-09-16,1031993,0,0,Python,4,NONE,,"มดแดง Mot Dang — Chiang Mai · Chiang Rai city directory, the 1997 way. รู้ทุกซอย เหมือนมดแดง"
+NaNoBotCo,47,27,0,0,1.74,public,2026-07-28,2026-09-18,7,0,0,-,1,NONE,,Profile README and project directory
+basque-tables,32,20,0,0,1.6,public,2026-09-16,2026-09-18,57678,0,0,Python,0,NONE,https://nanobotco.github.io/basque-tables/,"A sourced directory of Basque dining rooms in California, Nevada and Idaho — seating, prices, published days and the Picon Punch, every field naming where it came from."
+defiant-site,20,17,0,0,1.18,public,2026-07-23,2026-09-16,19693,0,0,Python,4,NONE,,"defiant.to — US expat services & medical tourism concierge, Chiang Mai. American healthcare is bullshit; this is the exit map."
+pink-box,24,15,0,0,1.6,public,2026-09-16,2026-09-18,31004,0,0,Python,0,NONE,,"Pink Box — a directory of the American mom-and-pop donut shop: cake or raised, egg rolls in the case, and who's been up since two"
+pinot-noir,28,15,0,0,1.87,public,2026-09-16,2026-09-16,42374,0,0,Python,0,NONE,,"A directory of pinot noir: the vine, the ground, the cellars, the words — and a deep dive on Santa Maria tri-tip. One JSON record per node, with per-field provenance."
+dead-mans-switch,20,15,0,0,1.33,public,2026-07-22,2026-09-16,14,0,0,Python,4,NONE,,"Local, offline check-in switch — fires a payload once if you ever stop checking in"
+care-abroad,16,13,0,0,1.23,public,2026-09-16,2026-09-16,28851,0,0,Python,6,NONE,https://nanobotco.github.io/care-abroad/,"A directory of treatment across borders: countries, city clusters, procedures, hospitals, published prices with their dates, the law where the law is the reason, and the risks. One JSON record per node, every field carrying its provenance."
+traffic-eye,18,12,2,1,1.5,public,2026-07-30,2026-09-16,22,0,0,JavaScript,0,NONE,,"Who is asking for your pages — people, AI crawlers, search engines, scrapers — across all your sites, in one place"
+amulet-atlas,16,9,0,0,1.78,public,2026-09-16,2026-09-18,20425,0,0,Python,0,NONE,,"Amulets, charms and talismans worldwide — one JSON record per node, every field carrying where it came from. Equal Earth maps, a deep timeline, the signs drawn."
+jovilabe,11,8,0,0,1.38,public,2026-07-28,2026-09-16,343,0,0,HTML,3,NONE,,A modeled antique geared instrument for Jupiter's four Galilean moons
+manuscript-wiki,8,7,0,0,1.14,public,2026-07-22,2026-09-16,35696,0,0,Python,5,NONE,,"Read-only wiki over the Lanna manuscript catalog — facets, OCR, image store"
+moat-game,7,7,0,0,1.0,public,2026-07-22,2026-08-03,485,0,0,Python,4,NONE,,A text game about an amulet smuggler crossing Chiang Mai checkpoints in 2076
+skipdjt,14,6,0,0,2.33,public,2026-07-22,2026-08-03,2003,0,0,Python,3,NONE,,Skip DJT — fare comparison for people who'd rather not fly from Palm Beach (PBI/DJT). Fort Lauderdale and Miami were cheaper on 11 of 11 routes checked.
+stocktake,6,6,0,0,1.0,public,2026-07-30,2026-07-30,4,0,0,Python,0,NONE,,"Re-derives what actually exists across all your projects, domains, and Cloudflare Workers — instead of remembering it"
+offramp,6,6,4,2,1.0,public,2026-07-28,2026-07-28,535,0,0,Python,4,NONE,,The manual for getting paid in crypto and spending it locally without a local bank account
+poplucky,6,6,0,0,1.0,public,2026-07-27,2026-07-27,4633,0,0,Python,3,NONE,,"Poplucky — a collector's catalogue for Pop Mart blind boxes. Faceted, trilingual (EN/TH/ZH), and open about what it doesn't know."
+swanbot,7,6,0,0,1.17,public,2026-07-22,2026-07-22,2,0,0,Python,3,NONE,,A black-swan-aware trading and agent utility
+manuscript-transcribe,6,6,7,1,1.0,public,2026-07-22,2026-07-22,7006,0,0,Python,4,NONE,,Transcription pipeline for Lanna manuscript page images
+cm-womens-health,6,6,0,0,1.0,public,2026-07-22,2026-07-22,25,0,0,JavaScript,4,NONE,,Finder for women's health facilities across Chiang Mai
+hak-farang,5,5,1,1,1.0,public,2026-07-28,2026-07-28,274,0,0,Astro,4,NONE,,"Thai-first guide for Thai partners of farang — money, visas, family"
+taoist-oracle,5,5,1,1,1.0,public,2026-07-28,2026-07-28,105,0,0,HTML,4,NONE,,"Stdlib Chinese and Taoist divination engine — I Ching, Plum Blossom, Wen Wang Gua, Bazi"
+pdf-tool,5,5,0,0,1.0,public,2026-07-22,2026-07-28,4,0,0,Python,4,NONE,,"A numbered-menu PDF toolbox — tables to Excel, split, sign, merge, extract"
+kali-yantra,5,5,0,0,1.0,public,2026-07-22,2026-07-28,20,0,0,Python,3,NONE,,"Generative yantra geometry, rendered by script"
+thai-answers,5,5,1,1,1.0,public,2026-07-22,2026-07-22,17,0,0,Python,4,NONE,,"Evergreen answers to real Facebook-group questions, over a venue catalog"
+flighthelper,5,5,0,0,1.0,public,2026-07-22,2026-07-22,164,0,0,Python,3,NONE,,Comfort-scored flight search with price-drop alerts
+feed-detox,5,5,0,0,1.0,public,2026-07-22,2026-07-22,7,0,0,Python,3,NONE,,"A done-with-you social-feed cleanup — personalized playbook, customer keeps their own login"
+amulet-market-api,5,5,0,0,1.0,public,2026-07-22,2026-07-22,62850,0,0,Python,4,NONE,,JSON API over thousands of real Lazada amulet-commerce listings
+wichaa-vault,5,5,0,0,1.0,public,2026-07-22,2026-07-22,814,0,0,Python,3,NONE,,Obsidian authoring vault behind the wichaa knowledge base
+mueang-map,4,4,0,0,1.0,public,2026-07-22,2026-08-03,2435,0,0,HTML,4,NONE,,Niche-lens participatory map of Chiang Mai
+blinking-twelve,4,4,0,0,1.0,public,2026-07-28,2026-07-28,78,0,0,HTML,4,NONE,,"blinky1200 — a skeuomorphic puzzle: set the blinking 12:00, eleven levels, 1987 to 2026"
+blinky-fidget,4,4,0,0,1.0,public,2026-07-28,2026-07-28,17,0,0,HTML,3,NONE,,"A VCR to fiddle with — no goal, just the click of buttons and static"
+moat-stardew,4,4,0,0,1.0,public,2026-07-28,2026-07-28,17,0,0,C#,4,NONE,,Charms of Chiang Mai — a Stardew Valley SMAPI mod set in the Moat world
+neurovizr-decoded,4,4,1,1,1.0,public,2026-07-28,2026-07-28,36,0,0,Python,4,NONE,,Stdlib FFT teardown of a light and sound neurostimulation device
+lanna-almanac,4,4,0,0,1.0,public,2026-07-28,2026-07-28,25,0,0,HTML,4,NONE,,One-file Northern-reckoning Lanna almanac widget
+homematch,4,4,0,0,1.0,public,2026-07-22,2026-07-22,63,0,0,JavaScript,4,NONE,,Negotiation-first household-services matchmaking for Chiang Mai
+food-pantry,4,4,0,0,1.0,public,2026-07-22,2026-07-22,1,0,0,-,3,NONE,,OCR pipeline for food-pantry intake forms
+amulet-reference,4,4,1,1,1.0,public,2026-07-22,2026-07-22,29,0,0,HTML,4,NONE,,Bilingual Thai and Lanna amulet reference and treatise
+thairoots,3,3,0,0,1.0,public,2026-08-02,2026-08-02,3492,0,0,HTML,0,NONE,,
+baanstaff,3,3,0,0,1.0,public,2026-07-22,2026-07-28,2401,0,0,TypeScript,3,NONE,,Household-staff marketplace and white-label kit for Chiang Mai (homematch's predecessor)
+st-expedite-wiki,3,3,0,0,1.0,public,2026-07-22,2026-07-22,53089,0,0,Python,3,NONE,,Bilingual Saint-Expédit devotional-tradition wiki with a verified inventory
+muak-yant-site,3,3,0,0,1.0,public,2026-07-22,2026-07-22,9,0,0,HTML,3,NONE,,Site for sacred yantra work on motorcycle helmets
+coucal-clock,2,1,0,0,2.0,private,2026-07-22,2026-09-16,2988,0,0,Python,0,NONE,,
+amulet-essentials,0,0,0,0,,public,2026-09-18,2026-09-18,299987,0,0,Python,0,NONE,,"A pan-Southeast-Asian amulet catalogue: 87 kinds in their own languages, 637 free pictures with verified licences, on-device photo identification, and a price analysis of 15,300 listings. Live at wichaa.net/amulets"
+acr-hud,0,0,0,0,,private,2026-07-22,2026-09-18,10,0,0,Python,0,NONE,,
+manuscript-crawler,0,0,0,0,,private,2026-07-22,2026-09-16,294359,0,0,HTML,0,NONE,,
+spec-hud,0,0,0,0,,private,2026-07-22,2026-09-16,219,0,0,TypeScript,0,NONE,,
+catalog-pipeline,0,0,0,0,,private,2026-07-22,2026-07-22,1741,0,0,JavaScript,0,NONE,,

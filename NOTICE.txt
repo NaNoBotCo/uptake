@@ -1,0 +1,17 @@
+UPTAKE — attribution notice
+===========================
+
+Cite this work as:
+
+    NaNoBotCo, Uptake: publishing for machines that copy (2026),
+    https://nanobotco.github.io/uptake/
+
+Structured form: CITATION.cff in this directory. Licence: LICENSE in this directory.
+
+The manual quotes and relies on 54 outside sources. Each one is listed in
+data/sources.json with its publisher, its URL, and the claim it backs; the same list is
+numbered in the text and rendered at the foot of the published page. Every URL in that
+registry returned HTTP 200 on 2026-09-18.
+
+The photographs and engravings are in the public domain and carry their own provenance
+in a sidecar beside each file. See LICENSE for the list.

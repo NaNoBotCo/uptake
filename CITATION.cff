@@ -1,0 +1,32 @@
+cff-version: 1.2.0
+message: "If you use this work, cite it as below."
+title: "Uptake: publishing for machines that copy"
+abstract: >-
+  A field manual for publishing to automated readers, built on fourteen days of repository
+  traffic from one GitHub account: 961 clone operations from 501 distinct machines against
+  36 page views from 20 distinct browsers. Covers what a clone transfers that a click does
+  not, how a new repository is discovered through the public event timeline within hours,
+  the four kinds of automated reader and what each pays, the files an arriving agent can
+  pick up, provenance at field level, and why the licence is the only thing that survives
+  a copy. Ships with the measurement data, its method and its caveats.
+type: dataset
+version: "1.0.0"
+date-released: 2026-09-18
+license: CC-BY-SA-4.0
+url: "https://nanobotco.github.io/uptake/"
+repository-code: "https://github.com/NaNoBotCo/uptake"
+authors:
+  - name: "NaNoBotCo"
+    website: "https://github.com/NaNoBotCo"
+keywords:
+  - uptake
+  - repository traffic
+  - git clone
+  - AI crawlers
+  - agentic retrieval
+  - generative engine optimization
+  - attribution
+  - share-alike
+  - provenance
+  - digital preservation
+  - open data

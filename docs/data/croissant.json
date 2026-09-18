@@ -1,0 +1,237 @@
+{
+  "@context": {
+    "@language": "en",
+    "@vocab": "https://schema.org/",
+    "citeAs": "cr:citeAs",
+    "column": "cr:column",
+    "conformsTo": "dct:conformsTo",
+    "cr": "http://mlcommons.org/croissant/",
+    "data": {
+      "@id": "cr:data",
+      "@type": "@json"
+    },
+    "dataType": {
+      "@id": "cr:dataType",
+      "@type": "@vocab"
+    },
+    "dct": "http://purl.org/dc/terms/",
+    "extract": "cr:extract",
+    "field": "cr:field",
+    "fileProperty": "cr:fileProperty",
+    "fileObject": "cr:fileObject",
+    "fileSet": "cr:fileSet",
+    "format": "cr:format",
+    "includes": "cr:includes",
+    "isLiveDataset": "cr:isLiveDataset",
+    "jsonPath": "cr:jsonPath",
+    "key": "cr:key",
+    "md5": "cr:md5",
+    "parentField": "cr:parentField",
+    "path": "cr:path",
+    "recordSet": "cr:recordSet",
+    "references": "cr:references",
+    "regex": "cr:regex",
+    "repeated": "cr:repeated",
+    "replace": "cr:replace",
+    "sc": "https://schema.org/",
+    "separator": "cr:separator",
+    "source": "cr:source",
+    "subField": "cr:subField",
+    "transform": "cr:transform"
+  },
+  "@type": "sc:Dataset",
+  "conformsTo": "http://mlcommons.org/croissant/1.0",
+  "name": "uptake-repository-traffic",
+  "description": "Clone and view traffic for all 52 repositories on the NaNoBotCo GitHub account over the fourteen days ending 18 September 2026, read from the GitHub REST traffic endpoints. Two record sets: one row per repository, and one row per day across the account. The method and the caveats are carried in the source JSON files.",
+  "citeAs": "NaNoBotCo, Uptake: publishing for machines that copy (2026), https://nanobotco.github.io/uptake/",
+  "url": "https://nanobotco.github.io/uptake/",
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "version": "1.0.0",
+  "datePublished": "2026-09-18",
+  "isLiveDataset": false,
+  "creator": {
+    "@type": "sc:Organization",
+    "name": "NaNoBotCo",
+    "url": "https://github.com/NaNoBotCo"
+  },
+  "keywords": [
+    "repository traffic",
+    "git clone",
+    "AI crawlers",
+    "web measurement",
+    "open data"
+  ],
+  "distribution": [
+    {
+      "@type": "cr:FileObject",
+      "@id": "repo-traffic-csv",
+      "name": "repo-traffic-csv",
+      "description": "One row per repository.",
+      "contentUrl": "https://nanobotco.github.io/uptake/data/repo-traffic-2026-09-18.csv",
+      "encodingFormat": "text/csv",
+      "sha256": "see the repository"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "account-daily-csv",
+      "name": "account-daily-csv",
+      "description": "One row per day, summed across the account.",
+      "contentUrl": "https://nanobotco.github.io/uptake/data/account-daily-2026-09-18.csv",
+      "encodingFormat": "text/csv",
+      "sha256": "see the repository"
+    }
+  ],
+  "recordSet": [
+    {
+      "@type": "cr:RecordSet",
+      "@id": "repositories",
+      "name": "repositories",
+      "description": "One record per repository in the window.",
+      "field": [
+        {
+          "@type": "cr:Field",
+          "@id": "repositories/repo",
+          "name": "repo",
+          "description": "Repository name.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "repo-traffic-csv"
+            },
+            "extract": {
+              "column": "repo"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "repositories/clones",
+          "name": "clones",
+          "description": "Total clone operations in the window.",
+          "dataType": "sc:Integer",
+          "source": {
+            "fileObject": {
+              "@id": "repo-traffic-csv"
+            },
+            "extract": {
+              "column": "clones"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "repositories/unique_cloners",
+          "name": "unique_cloners",
+          "description": "Distinct cloners, counted by IP address.",
+          "dataType": "sc:Integer",
+          "source": {
+            "fileObject": {
+              "@id": "repo-traffic-csv"
+            },
+            "extract": {
+              "column": "unique_cloners"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "repositories/views",
+          "name": "views",
+          "description": "GitHub repository page views.",
+          "dataType": "sc:Integer",
+          "source": {
+            "fileObject": {
+              "@id": "repo-traffic-csv"
+            },
+            "extract": {
+              "column": "views"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "repositories/unique_viewers",
+          "name": "unique_viewers",
+          "description": "Distinct viewers, counted by IP address.",
+          "dataType": "sc:Integer",
+          "source": {
+            "fileObject": {
+              "@id": "repo-traffic-csv"
+            },
+            "extract": {
+              "column": "unique_viewers"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "repositories/created",
+          "name": "created",
+          "description": "Repository creation date.",
+          "dataType": "sc:Date",
+          "source": {
+            "fileObject": {
+              "@id": "repo-traffic-csv"
+            },
+            "extract": {
+              "column": "created"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "@type": "cr:RecordSet",
+      "@id": "days",
+      "name": "days",
+      "description": "One record per UTC day, summed across the account.",
+      "field": [
+        {
+          "@type": "cr:Field",
+          "@id": "days/date",
+          "name": "date",
+          "description": "UTC day.",
+          "dataType": "sc:Date",
+          "source": {
+            "fileObject": {
+              "@id": "account-daily-csv"
+            },
+            "extract": {
+              "column": "date"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "days/clones",
+          "name": "clones",
+          "description": "Clone operations that day, all repositories.",
+          "dataType": "sc:Integer",
+          "source": {
+            "fileObject": {
+              "@id": "account-daily-csv"
+            },
+            "extract": {
+              "column": "clones"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "days/uniques",
+          "name": "uniques",
+          "description": "Sum of each repository's daily unique cloner count. A machine that cloned four repositories on one day counts four times.",
+          "dataType": "sc:Integer",
+          "source": {
+            "fileObject": {
+              "@id": "account-daily-csv"
+            },
+            "extract": {
+              "column": "uniques"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

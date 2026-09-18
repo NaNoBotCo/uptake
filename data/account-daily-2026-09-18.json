@@ -1,0 +1,111 @@
+{
+  "dataset": "NaNoBotCo clone traffic by day, whole account",
+  "window": {
+    "from": "2026-09-04",
+    "to": "2026-09-18",
+    "pulled": "2026-09-18T15:50+07:00"
+  },
+  "method": "Read straight off the GitHub REST traffic endpoints (/repos/{owner}/{repo}/traffic/clones and /traffic/views) for every repository on the NaNoBotCo account, via the gh CLI under the account's own token. The endpoints hold a rolling fourteen days and nothing older, so this file is the whole record of that window.",
+  "caveats": [
+    "GitHub counts an anonymous cloner by IP address. A single actor behind rotating cloud addresses raises the unique count; a fleet behind one NAT lowers it.",
+    "Window uniques are not the sum of the daily uniques \u2014 the same machine on two days is two daily uniques and one window unique.",
+    "A clone is a git fetch. It does not say the contents were read, parsed or kept.",
+    "Views count GitHub page loads, not visits to the published site. A site served from GitHub Pages can be busy while its repository page shows zero.",
+    "Five of the fifty-two repositories are private and appear here with their real counts; private repositories are still clonable by the account's own automation.",
+    "No user agent is available on these endpoints. Nothing here identifies which operator cloned what; the inference that the traffic is machine traffic rests on the clone-to-view ratio and the arrival timing, not on an identified requester."
+  ],
+  "licence": "CC BY-SA 4.0",
+  "note": "uniques here is the sum of each repository's daily unique count, so a machine that cloned four repositories on one day counts four times.",
+  "days": [
+    {
+      "date": "2026-09-04",
+      "clones": 18,
+      "uniques": 12,
+      "repos_touched": 8
+    },
+    {
+      "date": "2026-09-05",
+      "clones": 56,
+      "uniques": 16,
+      "repos_touched": 6
+    },
+    {
+      "date": "2026-09-06",
+      "clones": 52,
+      "uniques": 50,
+      "repos_touched": 39
+    },
+    {
+      "date": "2026-09-07",
+      "clones": 15,
+      "uniques": 13,
+      "repos_touched": 8
+    },
+    {
+      "date": "2026-09-08",
+      "clones": 23,
+      "uniques": 20,
+      "repos_touched": 10
+    },
+    {
+      "date": "2026-09-09",
+      "clones": 16,
+      "uniques": 15,
+      "repos_touched": 10
+    },
+    {
+      "date": "2026-09-10",
+      "clones": 10,
+      "uniques": 9,
+      "repos_touched": 7
+    },
+    {
+      "date": "2026-09-11",
+      "clones": 9,
+      "uniques": 8,
+      "repos_touched": 7
+    },
+    {
+      "date": "2026-09-12",
+      "clones": 5,
+      "uniques": 4,
+      "repos_touched": 4
+    },
+    {
+      "date": "2026-09-13",
+      "clones": 38,
+      "uniques": 29,
+      "repos_touched": 15
+    },
+    {
+      "date": "2026-09-14",
+      "clones": 45,
+      "uniques": 44,
+      "repos_touched": 39
+    },
+    {
+      "date": "2026-09-15",
+      "clones": 6,
+      "uniques": 5,
+      "repos_touched": 4
+    },
+    {
+      "date": "2026-09-16",
+      "clones": 617,
+      "uniques": 267,
+      "repos_touched": 47
+    },
+    {
+      "date": "2026-09-17",
+      "clones": 51,
+      "uniques": 42,
+      "repos_touched": 12
+    },
+    {
+      "date": "2026-09-18",
+      "clones": 0,
+      "uniques": 0,
+      "repos_touched": 0
+    }
+  ]
+}

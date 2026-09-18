@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+<url><loc>https://nanobotco.github.io/uptake/</loc><lastmod>2026-09-18</lastmod><priority>1.0</priority><image:image><image:loc>https://nanobotco.github.io/uptake/img/card-catalog.jpg</image:loc></image:image><image:image><image:loc>https://nanobotco.github.io/uptake/img/figure-1-who-came-for-it.png</image:loc></image:image><image:image><image:loc>https://nanobotco.github.io/uptake/img/figure-1-who-came-for-it.svg</image:loc></image:image><image:image><image:loc>https://nanobotco.github.io/uptake/img/figure-2-day-zero.png</image:loc></image:image><image:image><image:loc>https://nanobotco.github.io/uptake/img/figure-2-day-zero.svg</image:loc></image:image><image:image><image:loc>https://nanobotco.github.io/uptake/img/figure-3-the-hallway.jpg</image:loc></image:image><image:image><image:loc>https://nanobotco.github.io/uptake/img/figure-3-the-hallway.svg</image:loc></image:image><image:image><image:loc>https://nanobotco.github.io/uptake/img/figure-4-arrivals.gif</image:loc></image:image><image:image><image:loc>https://nanobotco.github.io/uptake/img/mundaneum.jpg</image:loc></image:image><image:image><image:loc>https://nanobotco.github.io/uptake/img/scribe.jpg</image:loc></image:image><image:image><image:loc>https://nanobotco.github.io/uptake/img/skep-line.png</image:loc></image:image><image:image><image:loc>https://nanobotco.github.io/uptake/img/skep-stone.jpg</image:loc></image:image></url>
+<url><loc>https://nanobotco.github.io/uptake/for-agents/</loc><lastmod>2026-09-18</lastmod></url>
+<url><loc>https://nanobotco.github.io/uptake/manual.txt</loc><lastmod>2026-09-18</lastmod></url>
+<url><loc>https://nanobotco.github.io/uptake/manual.md</loc><lastmod>2026-09-18</lastmod></url>
+<url><loc>https://nanobotco.github.io/uptake/corpus.jsonl</loc><lastmod>2026-09-18</lastmod></url>
+<url><loc>https://nanobotco.github.io/uptake/llms.txt</loc><lastmod>2026-09-18</lastmod></url>
+<url><loc>https://nanobotco.github.io/uptake/llms-full.txt</loc><lastmod>2026-09-18</lastmod></url>
+<url><loc>https://nanobotco.github.io/uptake/CITATION.cff</loc><lastmod>2026-09-18</lastmod></url>
+<url><loc>https://nanobotco.github.io/uptake/LICENSE.txt</loc><lastmod>2026-09-18</lastmod></url>
+<url><loc>https://nanobotco.github.io/uptake/data/repo-traffic-2026-09-18.json</loc><lastmod>2026-09-18</lastmod></url>
+<url><loc>https://nanobotco.github.io/uptake/data/repo-traffic-2026-09-18.csv</loc><lastmod>2026-09-18</lastmod></url>
+<url><loc>https://nanobotco.github.io/uptake/data/account-daily-2026-09-18.json</loc><lastmod>2026-09-18</lastmod></url>
+<url><loc>https://nanobotco.github.io/uptake/data/account-daily-2026-09-18.csv</loc><lastmod>2026-09-18</lastmod></url>
+<url><loc>https://nanobotco.github.io/uptake/data/sources.json</loc><lastmod>2026-09-18</lastmod></url>
+<url><loc>https://nanobotco.github.io/uptake/data/croissant.json</loc><lastmod>2026-09-18</lastmod></url>
+</urlset>
