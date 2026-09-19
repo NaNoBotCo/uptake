@@ -1,0 +1,91 @@
+UPTAKE CADENCE TRIAL — design and state
+=======================================
+Assigned 19 Sept 2026. Window 22 Sept – 3 Oct.
+
+THE QUESTION
+------------
+Fourteen days of the fleet's own traffic say a repo-day with a commit draws a
+median of 12 unique cloners and a repo-day without one draws 0. Excluding 18
+Sept, when 49 repos were pushed at once, it is 6.6 against 0.4 — still sixteen
+times. That a push draws machines is therefore not in question here.
+
+What is in question: does the push have to carry anything? If a timestamp bump
+pulls the same machines as a real change, the finding is about the event and
+not the work. If it does not, the event is only a notification and the content
+is what earns the copy.
+
+THE ARMS
+--------
+Cadence is held constant. The single variable is whether the push carries real
+content. Both arms fire on the same five days: 22, 25, 28 Sept, 1, 3 Oct.
+
+  arm1_noop    7 repos   a probe file's timestamp changes, nothing else
+  arm2_real    7 repos   a genuine content change, prepared in advance
+  holdout      7 repos   untouched for the duration
+  benched      8 repos   left quiet, not analysed
+
+Arm 2 was picked on whether a repo has real work to ship five times, which makes
+it a chosen set rather than a random one. Left uncorrected that is the whole
+result: repos with live data behind them are also the repos a crawler may favour
+for reasons that have nothing to do with cadence. So arm 1 was cut from fifteen
+to seven, each one the nearest match to an arm 2 repo by how many machines it
+drew on 18 Sept. Five of the seven pairs match within one machine.
+
+  uptake             43   st-expedite-wiki   36
+  flighthelper       32   wichaa-vault       32
+  visa-desk          29   thairoots          28
+  amulet-market-api  27   pdf-tool           27
+  mueang-map         24   kali-yantra        24
+  cm-womens-health   15   offramp            14
+  skipdjt            12   hak-farang         12
+                   26.0 mean               24.7
+
+Four of arm 2 can sustain five real pushes because something live sits behind
+them: uptake regenerates its corpus and this trial's own data, mueang-map pulls
+province boundaries, cm-womens-health fetches from OSM, amulet-market-api
+rebuilds its snapshot. Three carry one real fix each and will push fewer times —
+flighthelper's PBI to DJT code flip of 18 August, which stale caches still emit,
+visa-desk's work already in flight, and skipdjt's own build output stranded in a
+stash. Seven repos were dropped from arm 2 for having no live source, no named
+open item and nothing in flight: neurovizr-decoded, homematch, stocktake,
+swanbot, blinking-twelve, lanna-almanac, baanstaff.
+
+Because the arms will not fire the same number of times, the unit of analysis is
+the push and not the repo: machines drawn in the 24 hours after each push,
+keyed to the commit ledger, so a push that did not happen cannot be counted as
+one that drew nothing.
+
+WHAT IS EXCLUDED, AND WHY
+-------------------------
+19 repos had commits on two or more days in the baseline window and are under
+active development; freezing them would cost real work. index is excluded
+separately — haus.index.nightly pushes it real content at 04:10 daily, so it
+cannot be a no-op repo. Repos with no remote are out of reach by construction.
+
+THE SEQUESTER
+-------------
+The holdout is guarded twice. push_walk.py skips it by name, and each of the
+seven has a pre-push hook. Both expire by themselves on 3 Oct rather than
+waiting to be remembered. Commits still work; only the push is held. A
+deliberate override is git push --no-verify.
+
+LIMITS
+------
+A clone is not a read. The traffic endpoints carry no user agent, so nothing
+here identifies an operator or shows that anything was ingested.
+
+Anonymous cloners are counted by IP and window uniques are not the sum of the
+dailies. Per-repo uniques are never deduplicated across repos.
+
+Arm 2 depends on real work existing to ship. On 19 Sept only 3 of its 14 repos
+had any, which is why the start moved to the 22nd. Any repo with nothing real
+to ship on a push day is skipped and logged, not filled with a token change.
+
+FILES
+-----
+snapshot.py                     daily capture; GitHub keeps only 14 days
+cadence.py                      the push arms; --dry-run is safe
+cadence-ab-assignment.json      arms, seed, dates, exclusions
+traffic-ledger.jsonl            one row per repo per day
+commit-ledger.jsonl             what actually landed, for analysis on
+                                observed pushes rather than intended ones

@@ -1,3 +1,15 @@
 .DS_Store
 __pycache__/
 *.tmp.png
+
+# UPTAKE cadence trial — machine-generated, regenerated daily by haus.uptake.snapshot.
+# Ignored on purpose: this repo is an arm of the trial, and a ledger that rewrites
+# itself every morning would leave it permanently dirty, so every scheduled push
+# would look like a real change while carrying none. The ledgers are published
+# deliberately at the end of the window, as a dataset, which is a real change.
+experiments/traffic-ledger.jsonl
+experiments/commit-ledger.jsonl
+experiments/snapshot.log
+experiments/cadence.log
+experiments/localclones.json
+experiments/baseline-*.tsv

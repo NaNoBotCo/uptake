@@ -1,0 +1,99 @@
+{
+ "design": "cadence held constant; variable = does the push carry real content",
+ "seed": 20260919,
+ "assigned": "2026-09-19",
+ "window": "2026-09-19..2026-10-03",
+ "cadence": "every 3rd day, 5 pushes per repo",
+ "excluded_active": [
+  "Lanna",
+  "NaNoBotCo",
+  "amulet-atlas",
+  "basque-tables",
+  "buffalo-wings",
+  "care-abroad",
+  "carolina-barbecue",
+  "coucal-clock",
+  "dead-mans-switch",
+  "defiant-site",
+  "jovilabe",
+  "manuscript-crawler",
+  "manuscript-wiki",
+  "mot-dang",
+  "nanobotco.github.io",
+  "pink-box",
+  "pinot-noir",
+  "spec-hud",
+  "traffic-eye"
+ ],
+ "excluded_deny": [
+  "catalog",
+  "ear",
+  "horseshoe",
+  "khan-tang",
+  "khwan",
+  "listing-sheet",
+  "michael-go-court",
+  "rusty-chandelier",
+  "search-core",
+  "tel"
+ ],
+ "arms": {
+  "arm1_noop": [
+   "st-expedite-wiki",
+   "wichaa-vault",
+   "thairoots",
+   "pdf-tool",
+   "kali-yantra",
+   "offramp",
+   "hak-farang"
+  ],
+  "arm2_real": [
+   "uptake",
+   "flighthelper",
+   "visa-desk",
+   "amulet-market-api",
+   "mueang-map",
+   "cm-womens-health",
+   "skipdjt"
+  ],
+  "holdout": [
+   "blinky-fidget",
+   "amulet-essentials",
+   "moat-stardew",
+   "thai-answers",
+   "amulet-reference",
+   "moat-game",
+   "taoist-oracle"
+  ],
+  "benched": [
+   "muak-yant-site",
+   "poplucky",
+   "manuscript-transcribe",
+   "feed-detox",
+   "food-pantry",
+   "mae-hong-son-loop",
+   "acr-hud",
+   "catalog-pipeline"
+  ]
+ },
+ "excluded_bot": [
+  "index \u2014 haus.index.nightly pushes it real content at 04:10 daily"
+ ],
+ "push_days": [
+  "2026-09-19",
+  "2026-09-22",
+  "2026-09-25",
+  "2026-09-28",
+  "2026-10-01"
+ ],
+ "arm2_dropped": [
+  "neurovizr-decoded",
+  "homematch",
+  "stocktake",
+  "swanbot",
+  "blinking-twelve",
+  "lanna-almanac",
+  "baanstaff"
+ ],
+ "matching": "arm2 selected on real backlog, so arm1 trimmed to nearest-baseline pairs; unit of analysis is the push, not the repo"
+}
