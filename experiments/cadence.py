@@ -32,7 +32,7 @@ This file exists to change, and to change nothing else. It is one arm of a publi
 experiment testing whether a repository push draws machine readers when the push
 carries no new content. The other arm ships real changes on the same schedule.
 
-Window: 2026-09-19 .. 2026-10-03
+Window: 2026-09-22 .. 2026-10-03
 Method and results: https://nanobotco.github.io/uptake/
 
 Last touched: {stamp}

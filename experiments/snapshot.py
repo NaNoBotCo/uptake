@@ -16,6 +16,7 @@ import json, subprocess, datetime, pathlib, sys
 HERE = pathlib.Path(__file__).resolve().parent
 LEDGER = HERE / "traffic-ledger.jsonl"
 COMMITS = HERE / "commit-ledger.jsonl"
+POPULAR = HERE / "popular-ledger.jsonl"
 
 
 def gh(path):
@@ -37,7 +38,7 @@ def repos():
 
 def main():
     today = datetime.date.today().isoformat()
-    rows, crows = [], []
+    rows, crows, prows = [], [], []
     names = repos()
     if not names:
         print("no repos returned — is gh authed?", file=sys.stderr)
@@ -54,6 +55,13 @@ def main():
             rows.append({"repo": n, "day": d, "clones": x["count"],
                          "cloners": x["uniques"], "views": vv.get("count", 0),
                          "viewers": vv.get("uniques", 0), "read_on": today})
+        # referrers and fetched paths: a 14-day rolling window too, gone once dropped
+        for kind in ("referrers", "paths"):
+            for x in (gh(f"repos/NaNoBotCo/{n}/traffic/popular/{kind}") or []):
+                prows.append({"repo": n, "kind": kind,
+                              "what": x.get("referrer") or x.get("path"),
+                              "count": x["count"], "uniques": x["uniques"],
+                              "read_on": today})
         since = (datetime.date.today() - datetime.timedelta(days=15)).isoformat()
         cm = gh(f"repos/NaNoBotCo/{n}/commits?since={since}T00:00:00Z&per_page=100")
         for x in (cm or []):
@@ -85,7 +93,8 @@ def main():
 
     n1 = rewrite(LEDGER, rows, lambda o: (o["repo"], o["day"], o["read_on"]))
     n2 = rewrite(COMMITS, crows, lambda o: (o["repo"], o["sha"]))
-    print(f"{today}: {len(names)} repos · traffic ledger {n1} rows · commit ledger {n2} rows")
+    n3 = rewrite(POPULAR, prows, lambda o: (o["repo"], o["kind"], o["what"], o["read_on"]))
+    print(f"{today}: {len(names)} repos · traffic ledger {n1} rows · commit ledger {n2} rows · popular {n3} rows")
     return 0
 
 

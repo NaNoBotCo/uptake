@@ -9,7 +9,9 @@ __pycache__/
 # deliberately at the end of the window, as a dataset, which is a real change.
 experiments/traffic-ledger.jsonl
 experiments/commit-ledger.jsonl
+experiments/popular-ledger.jsonl
 experiments/snapshot.log
 experiments/cadence.log
 experiments/localclones.json
 experiments/baseline-*.tsv
+experiments/*.bak-*
