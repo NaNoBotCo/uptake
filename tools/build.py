@@ -395,7 +395,7 @@ h2 .num{min-width:1.5rem}}
 
 def page(body, title, desc, extra_head="", canonical=SITE + "/"):
     return f"""<!doctype html>
-<html lang="en">
+<html lang="en" translate="no" class="notranslate">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -417,6 +417,9 @@ def page(body, title, desc, extra_head="", canonical=SITE + "/"):
 <meta name="twitter:card" content="summary_large_image">
 <style>{CSS}</style>
 {extra_head}
+<meta name="google" content="notranslate">
+<meta name="robots" content="notranslate">
+<script>if(/[.]translate[.]goog$/.test(location.hostname))location.replace("https://"+location.hostname.slice(0,-15).replace(/--/g,"~").replace(/-/g,".").replace(/~/g,"-")+location.pathname+location.search.replace(/([?&])_x_tr_[^&]*/g,"$1").replace(/[?&]+$/,"").replace(/[?]&+/,"?")+location.hash)</script>
 </head>
 <body>
 <main>
