@@ -394,6 +394,11 @@ h2 .num{min-width:1.5rem}}
 
 
 def page(body, title, desc, extra_head="", canonical=SITE + "/"):
+    # each page serves its own share card (docs/img/card*.jpg)
+    if canonical.rstrip("/").endswith("for-agents"):
+        card, card_alt = "card-for-agents", "Card: Uptake, for agents, licence and machine-readable shapes"
+    else:
+        card, card_alt = "card", "Card: Uptake, a field manual for the web after search, over a medieval painting of a scribe at his desk"
     return f"""<!doctype html>
 <html lang="en" translate="no" class="notranslate">
 <head>
@@ -413,8 +418,13 @@ def page(body, title, desc, extra_head="", canonical=SITE + "/"):
 <meta property="og:title" content="{html.escape(title)}">
 <meta property="og:description" content="{html.escape(desc)}">
 <meta property="og:url" content="{canonical}">
-<meta property="og:image" content="{SITE}/img/figure-2-day-zero.png">
+<meta property="og:image" content="{SITE}/img/{card}.jpg">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:alt" content="{html.escape(card_alt)}">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="{SITE}/img/{card}.jpg">
+<meta name="twitter:image:alt" content="{html.escape(card_alt)}">
 <style>{CSS}</style>
 {extra_head}
 <meta name="google" content="notranslate">
